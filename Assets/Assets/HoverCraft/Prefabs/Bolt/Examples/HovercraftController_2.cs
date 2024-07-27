@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class HovercraftController_2 : MonoBehaviour
 {
-    public float force = 2000f;
-    public float torque = 250f;
+    public float force = 1250f;
+    public float torque = 300f;
 
     private Rigidbody rb;
 

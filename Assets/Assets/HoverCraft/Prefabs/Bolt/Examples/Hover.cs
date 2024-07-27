@@ -1,35 +1,38 @@
 using UnityEngine;
 
-public class Hover : MonoBehaviour
+public class HovercraftController : MonoBehaviour
 {
-    public float hoverHeight = 5.0f;
-    public float hoverForce = 65.0f;
-    public float damping = 0.5f;
-    public LayerMask terrainLayer; 
+    public float hoverHeight = 2f;
+    public float hoverDamping = 5f;
+    public float groundCheckDistance = 5f;
+    public LayerMask groundMask;
 
     private Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
     }
 
     void FixedUpdate()
     {
-        Ray ray = new Ray(transform.position, Vector3.down);
+        Hover();
+    }
+
+    void Hover()
+    {
         RaycastHit hit;
+        Vector3 hoverPosition = transform.position;
 
-        if (Physics.Raycast(ray, out hit, hoverHeight * 2, terrainLayer))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, groundCheckDistance, groundMask))
         {
-            float desiredHeight = hit.point.y + hoverHeight;
-            float currentHeight = transform.position.y;
-            float heightDifference = desiredHeight - currentHeight;
+            float currentHeight = hit.distance;
+            float targetHeight = hoverHeight;
+            float heightDifference = targetHeight - currentHeight;
 
-            float proportionalHeight = heightDifference / hoverHeight;
-            Vector3 appliedHoverForce = Vector3.up * proportionalHeight * hoverForce;
-            Vector3 dampingForce = -rb.velocity * damping;
-
-            rb.AddForce(appliedHoverForce + dampingForce, ForceMode.Acceleration);
+            Vector3 force = Vector3.up * heightDifference * hoverDamping;
+            rb.AddForce(force, ForceMode.Acceleration);
         }
     }
 }
