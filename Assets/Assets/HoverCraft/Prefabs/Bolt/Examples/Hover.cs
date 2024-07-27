@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class HovercraftController : MonoBehaviour
 {
+    public float force = 750f;
+    public float torque = 700f;
     public float hoverHeight = 2f;
     public float hoverDamping = 5f;
     public float groundCheckDistance = 5f;
     public LayerMask groundMask;
+    public float maxVerticalSpeed = 10f;
 
     private Rigidbody rb;
 
@@ -18,12 +21,29 @@ public class HovercraftController : MonoBehaviour
     void FixedUpdate()
     {
         Hover();
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.AddRelativeForce(Vector3.back * force * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddRelativeForce(Vector3.forward * force * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddRelativeTorque(Vector3.up * -torque * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddRelativeTorque(Vector3.up * torque * Time.deltaTime);
+        }
     }
 
     void Hover()
     {
         RaycastHit hit;
-        Vector3 hoverPosition = transform.position;
 
         if (Physics.Raycast(transform.position, Vector3.down, out hit, groundCheckDistance, groundMask))
         {
@@ -32,8 +52,21 @@ public class HovercraftController : MonoBehaviour
             float heightDifference = targetHeight - currentHeight;
 
             Vector3 force = Vector3.up * heightDifference * hoverDamping;
+
+            if (rb.velocity.y > maxVerticalSpeed)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, maxVerticalSpeed, rb.velocity.z);
+            }
+            else if (rb.velocity.y < -maxVerticalSpeed)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, -maxVerticalSpeed, rb.velocity.z);
+            }
+
             rb.AddForce(force, ForceMode.Acceleration);
+        }
+        else
+        {
+            rb.AddForce(Vector3.down * 10f, ForceMode.Acceleration);
         }
     }
 }
-
