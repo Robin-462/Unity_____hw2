@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328384921484324, guid: 3b42812037617f94db4d73b138651e5c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6.32
       objectReference: {fileID: 0}
     - target: {fileID: 4328384921484324, guid: 3b42812037617f94db4d73b138651e5c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -177,6 +177,31 @@ PrefabInstance:
     - target: {fileID: 4328384921484324, guid: 3b42812037617f94db4d73b138651e5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109583095831533321, guid: 3b42812037617f94db4d73b138651e5c,
+        type: 3}
+      propertyPath: force
+      value: 800000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109583095831533321, guid: 3b42812037617f94db4d73b138651e5c,
+        type: 3}
+      propertyPath: torque
+      value: 300000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109583095831533321, guid: 3b42812037617f94db4d73b138651e5c,
+        type: 3}
+      propertyPath: hoverHeight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109583095831533321, guid: 3b42812037617f94db4d73b138651e5c,
+        type: 3}
+      propertyPath: hoverDamping
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109583095831533321, guid: 3b42812037617f94db4d73b138651e5c,
+        type: 3}
+      propertyPath: maxVerticalSpeed
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b42812037617f94db4d73b138651e5c, type: 3}
@@ -235,6 +260,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: force
+      value: 450000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: torque
+      value: 130000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: hoverHeight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: hoverDamping
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: maxVerticalSpeed
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831926983301500079, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: groundCheckDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
       propertyPath: force
@@ -248,7 +313,7 @@ PrefabInstance:
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
@@ -399,6 +464,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: force
+      value: 500000
+      objectReference: {fileID: 0}
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: torque
+      value: 110000
+      objectReference: {fileID: 0}
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: hoverHeight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: hoverDamping
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: maxVerticalSpeed
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -393732913372119533, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+        type: 3}
+      propertyPath: groundCheckDistance
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 1028590976956288, guid: 5d68a55fb8691f74dbda8f0e7d28977e, type: 3}
       propertyPath: m_Name
       value: Bolt_2
@@ -417,7 +522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4401185589141230, guid: 5d68a55fb8691f74dbda8f0e7d28977e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4401185589141230, guid: 5d68a55fb8691f74dbda8f0e7d28977e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -452,12 +557,6 @@ PrefabInstance:
 --- !u!1 &838065933 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1713593669034480, guid: ecfd29dfc3f76e7499647b82a70d59a6,
-    type: 3}
-  m_PrefabInstance: {fileID: 663884696}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &838065938 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4346906230556676, guid: ecfd29dfc3f76e7499647b82a70d59a6,
     type: 3}
   m_PrefabInstance: {fileID: 663884696}
   m_PrefabAsset: {fileID: 0}
@@ -729,11 +828,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741039100}
   m_LocalRotation: {x: 0.20217195, y: -0, z: -0, w: 0.9793501}
-  m_LocalPosition: {x: 0.46, y: 7.0500026, z: -13.48}
+  m_LocalPosition: {x: -0.13, y: 2.24, z: -8.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 838065938}
+  m_Father: {fileID: 1744143041}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 23.328, y: 0, z: 0}
 --- !u!114 &1741039102
@@ -832,3 +931,53 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1744143038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051512781530710, guid: 3b42812037617f94db4d73b138651e5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 54800461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1744143041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4328384921484324, guid: 3b42812037617f94db4d73b138651e5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 54800461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1744143042
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744143038}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 5
+  m_AngularDrag: 5
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &1823106624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1028590976956288, guid: 5d68a55fb8691f74dbda8f0e7d28977e,
+    type: 3}
+  m_PrefabInstance: {fileID: 710086824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1823106629
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823106624}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 1
+  m_AngularDrag: 0.7
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

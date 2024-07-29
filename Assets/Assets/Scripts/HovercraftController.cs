@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class HovercraftController : MonoBehaviour
 {
-    public float force = 750f;
-    public float torque = 700f;
-    public float hoverHeight = 2f;
+    public float force = 1000f;
+    public float torque = 500f;
+    public float hoverHeight = 15f;
     public float hoverDamping = 5f;
     public float groundCheckDistance = 5f;
     public LayerMask groundMask;
@@ -15,7 +15,7 @@ public class HovercraftController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        //rb.freezeRotation = true;
     }
 
     void FixedUpdate()
@@ -24,11 +24,11 @@ public class HovercraftController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddRelativeForce(Vector3.back * force * Time.deltaTime);
+            rb.AddRelativeForce(Vector3.forward * force * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddRelativeForce(Vector3.forward * force * Time.deltaTime);
+            rb.AddRelativeForce(Vector3.back * force * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -63,6 +63,9 @@ public class HovercraftController : MonoBehaviour
             }
 
             rb.AddForce(force, ForceMode.Acceleration);
+
+            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime *5f);
         }
         else
         {
