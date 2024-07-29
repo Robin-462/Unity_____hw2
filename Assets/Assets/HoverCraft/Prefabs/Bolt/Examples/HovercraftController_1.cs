@@ -15,7 +15,7 @@ public class HovercraftController_1 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        // rb.freezeRotation = true;
+        rb.freezeRotation = true;
     }
 
     void FixedUpdate()
@@ -24,11 +24,11 @@ public class HovercraftController_1 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddRelativeForce(Vector3.back * force * Time.deltaTime);
+            rb.AddRelativeForce(Vector3.forward * force * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddRelativeForce(Vector3.forward * force * Time.deltaTime);
+            rb.AddRelativeForce(Vector3.back * force * Time.deltaTime);
         }
 
 
