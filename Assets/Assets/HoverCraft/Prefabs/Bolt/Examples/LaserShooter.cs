@@ -7,6 +7,13 @@ public class LaserShooter : MonoBehaviour
     public float laserLifetime = 2f;
     public Transform laserSpawnPoint;
 
+    private Rigidbody hovercraftRb;
+
+    void Start()
+    {
+        hovercraftRb = GetComponent<Rigidbody>();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
