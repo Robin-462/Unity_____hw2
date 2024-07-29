@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 33421955381027996}
   - component: {fileID: 23727059841829022}
   - component: {fileID: 8592956998453772462}
+  - component: {fileID: 7831926983301500079}
   m_Layer: 0
   m_Name: Bolt_1
   m_TagString: Untagged
@@ -262,13 +263,41 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713593669034480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fb5772cf984848a59e36415c049fef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1000
   torque: 500
+  hoverHeight: 15
+  hoverDamping: 5
+  groundCheckDistance: 5
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  maxVerticalSpeed: 10
+--- !u!114 &7831926983301500079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713593669034480}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8be91f116ddb47c7bb56a5556e2de63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 750
+  torque: 700
+  hoverHeight: 2
+  hoverDamping: 5
+  groundCheckDistance: 5
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  maxVerticalSpeed: 10
 --- !u!1 &1883709046260860
 GameObject:
   m_ObjectHideFlags: 0
