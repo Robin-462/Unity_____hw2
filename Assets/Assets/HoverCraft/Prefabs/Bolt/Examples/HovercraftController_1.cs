@@ -15,7 +15,7 @@ public class HovercraftController_1 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        //rb.freezeRotation = true;
     }
 
     void FixedUpdate()
@@ -30,7 +30,6 @@ public class HovercraftController_1 : MonoBehaviour
         {
             rb.AddRelativeForce(Vector3.back * force * Time.deltaTime);
         }
-
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -64,6 +63,9 @@ public class HovercraftController_1 : MonoBehaviour
             }
 
             rb.AddForce(force, ForceMode.Acceleration);
+
+            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime *5f);
         }
         else
         {

@@ -237,33 +237,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
+      propertyPath: force
+      value: 450000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
+      propertyPath: torque
+      value: 130000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
       propertyPath: hoverHeight
-      value: 15.84
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
       propertyPath: hoverDamping
-      value: 9.96
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
       propertyPath: maxVerticalSpeed
-      value: 5
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
       propertyPath: groundMask.m_Bits
-      value: 1
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8592956998453772462, guid: ecfd29dfc3f76e7499647b82a70d59a6,
         type: 3}
       propertyPath: groundCheckDistance
-      value: 20
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecfd29dfc3f76e7499647b82a70d59a6, type: 3}
@@ -459,12 +469,12 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838065933}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 30
+  m_Drag: 2.5
+  m_AngularDrag: 3.2
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &961604638
