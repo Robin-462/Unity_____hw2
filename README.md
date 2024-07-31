@@ -17,3 +17,7 @@ futuristic racing game called F-Zero: Cross-Country. Set in the 22nd century, th
    - The bottom of the cars should not appear to touch the terrain surface at any time.
 5. **Toggling Between Cars**
    - The player can control one hovercraft at a time, and cycle through them by using the “C” key (C for cycle).
+### Choice Features
+6. **Laser-Firing Car**
+   - Use the space bar to fire lasers
+   - Different car has different color about laser
