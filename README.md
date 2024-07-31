@@ -21,3 +21,25 @@ futuristic racing game called F-Zero: Cross-Country. Set in the 22nd century, th
 6. **Laser-Firing Car**
    - Use the space bar to fire lasers
    - Different car has different color about laser
+# Known Issues
+   - there can not use 1, 2, 3 to control the cars to change
+# Installation Instructions
+
+1. **Setup Unity Project**
+   - Launch Unity Hub and select "Create new project".
+   - Ensure all necessary packages and plugins used in the project are installed.
+   - Open the "Package Manager" in the Unity Editor and verify all packages are correctly installed.
+
+2. **Import Project Files**
+   - Unzip the project folder and open it in Unity.
+
+3. **Rendering Pipeline**
+   - This project uses Unity's Universal Rendering Pipeline (URP).
+  
+## Controls
+
+- **Movement:** 'W' and 'S'
+- **Rotation:** 'A' and 'D' 
+## Testing
+
+- Ensure the project runs in a fresh install by testing it in a new Unity project directory to confirm all elements work as expected.
