@@ -181,8 +181,8 @@ GameObject:
   - component: {fileID: 4346906230556676}
   - component: {fileID: 33421955381027996}
   - component: {fileID: 23727059841829022}
-  - component: {fileID: 8592956998453772462}
   - component: {fileID: 7831926983301500079}
+  - component: {fileID: 1315319470102624756}
   - component: {fileID: 4798659301839900714}
   m_Layer: 0
   m_Name: Bolt_1
@@ -257,27 +257,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8592956998453772462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713593669034480}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb5772cf984848a59e36415c049fef1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 1000
-  torque: 500
-  hoverHeight: 15
-  hoverDamping: 5
-  groundCheckDistance: 5
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 0
-  maxVerticalSpeed: 10
 --- !u!114 &7831926983301500079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,15 +269,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8be91f116ddb47c7bb56a5556e2de63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 750
-  torque: 700
-  hoverHeight: 2
-  hoverDamping: 5
-  groundCheckDistance: 5
+  force: 450000
+  torque: 130000
+  hoverHeight: 10
+  hoverDamping: 1000
+  groundCheckDistance: 500
+  maxVerticalSpeed: 250
+--- !u!114 &1315319470102624756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713593669034480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverHeight: 10
+  hoverDamping: 1000
+  groundCheckDistance: 500
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
-  maxVerticalSpeed: 10
+    m_Bits: 2147483647
+  maxVerticalSpeed: 250
 --- !u!54 &4798659301839900714
 Rigidbody:
   m_ObjectHideFlags: 0

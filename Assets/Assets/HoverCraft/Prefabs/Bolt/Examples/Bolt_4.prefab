@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33383064751189670}
   - component: {fileID: 23624184556817922}
   - component: {fileID: 1109583095831533321}
+  - component: {fileID: 6696211013303408841}
   - component: {fileID: 5297979839873026412}
   m_Layer: 0
   m_Name: Bolt_4
@@ -98,15 +99,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8be91f116ddb47c7bb56a5556e2de63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 100000
-  torque: 70000
-  hoverHeight: 15
-  hoverDamping: 5
+  force: 800000
+  torque: 300000
+  hoverHeight: 10
+  hoverDamping: 60
+  groundCheckDistance: 10000
+  maxVerticalSpeed: 500
+--- !u!114 &6696211013303408841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051512781530710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverHeight: 10
+  hoverDamping: 60
   groundCheckDistance: 10000
   groundMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxVerticalSpeed: 80
+    m_Bits: 2147483647
+  maxVerticalSpeed: 500
 --- !u!54 &5297979839873026412
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,9 +132,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051512781530710}
   serializedVersion: 2
-  m_Mass: 70
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Mass: 50
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
