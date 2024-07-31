@@ -7,3 +7,7 @@ futuristic racing game called F-Zero: Cross-Country. Set in the 22nd century, th
 1. **Character Control**
   -Use WS to implement basic movement of the player character (forward, backward).
   -Rotation control using 'A' and 'D' or the left and right arrow keys.
+1. **Character Control**
+   - Basic movement for the player character (forward, backward, left, right) using the WASD or arrow keys.
+   - Rotation control using 'A' and 'D' or the left and right arrow keys.
+
