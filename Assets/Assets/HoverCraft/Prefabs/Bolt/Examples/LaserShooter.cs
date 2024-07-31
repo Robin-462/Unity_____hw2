@@ -16,7 +16,7 @@ public class LaserShooter : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && enabled)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             FireLaser();
         }
@@ -26,6 +26,8 @@ public class LaserShooter : MonoBehaviour
     {
         Vector3 laserSpawnPosition = laserSpawnPoint.position;
         Quaternion laserRotation = laserSpawnPoint.rotation;
+        Quaternion additionalRotation = Quaternion.Euler(90, 0, 0);
+        laserRotation *= additionalRotation;
 
         GameObject laser = Instantiate(laserPrefab, laserSpawnPosition, laserRotation);
 
