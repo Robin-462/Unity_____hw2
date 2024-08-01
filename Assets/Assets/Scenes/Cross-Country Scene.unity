@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 1
   m_FrequencyGain: 1
-  mNoiseOffsets: {x: 0, y: 0, z: 0}
+  mNoiseOffsets: {x: 464.4334, y: -476.60532, z: -354.79846}
 --- !u!114 &934587519
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 1
   m_FrequencyGain: 1
-  mNoiseOffsets: {x: 0, y: 0, z: 0}
+  mNoiseOffsets: {x: 755.44165, y: 91.19092, z: -62.016846}
 --- !u!114 &1425920383
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   ShoulderOffset: {x: 0, y: 0, z: 0}
   VerticalArmLength: 3
   CameraSide: 0.469
-  CameraDistance: 10
+  CameraDistance: 13
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 0
