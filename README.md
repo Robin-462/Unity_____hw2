@@ -43,3 +43,7 @@ futuristic racing game called F-Zero: Cross-Country. Set in the 22nd century, th
 ## Testing
 
 - Ensure the project runs in a fresh install by testing it in a new Unity project directory to confirm all elements work as expected.
+
+## Assets
+- **List of Assets**
+- Bolt_1, Bolt_2, Bolt_4, Cylinder, Cylinder 1, Cylinder 2
