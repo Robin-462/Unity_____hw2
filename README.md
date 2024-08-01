@@ -21,6 +21,10 @@ futuristic racing game called F-Zero: Cross-Country. Set in the 22nd century, th
 6. **Laser-Firing Car**
    - Use the space bar to fire lasers
    - Different car has different color about laser
+7. **More Realistic Effects**
+   -  Make the hovercraft engines sound like they are speeding up and slowing down when starting and stopping, respectively
+   -  Make the engines, lights, and other Tron-like features of each hovercraft glow.
+
 # Known Issues
    - there can not use 1, 2, 3 to control the cars to change
 # Installation Instructions
