@@ -51,3 +51,10 @@ futuristic racing game called F-Zero: Cross-Country. Set in the 22nd century, th
 ## Assets
 - **List of Assets**
 - Bolt_1, Bolt_2, Bolt_4, Cylinder, Cylinder 1, Cylinder 2
+
+## Additional Information
+- **Tutorial References:**
+- An introduction to scripting in C# for Unity:
+https://unity.com/how-to/learning-c-sharp-unity-beginners
+- The Unity manual’s scripting reference:
+https://docs.unity3d.com/Manual/ScriptingSection.html
